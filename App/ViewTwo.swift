@@ -17,24 +17,31 @@ struct ViewTwo: View {
                 .foregroundStyle(.tint)
             Spacer()
             
-             VStack(alignment: .leading) {
-            Text("إختر شخصيتك في ")
+            VStack(alignment: .leading) {
+                Text("إختر شخصيتك في ")
                     .font(.title)
                     .foregroundColor(.orange1)
-            Text("أسمعك")
+                Text("أسمعك")
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(.orange1)
                     .multilineTextAlignment(.leading)
-                    
-                    
                 
-                Spacer()
                 
-            }
+             
+            Spacer()
+                
+                
             }
         }
     }
-    #Preview {
-        ViewTwo()
-    }
+}
+                     
+                     
+                 
+            
+        
+    
+                     #Preview {
+                         ViewTwo()
+                     }
