@@ -10,15 +10,34 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image( "image4")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Spacer()
         }
-        .padding()
+        ZStack{
+            Button(action: {
+                
+            }, label: {
+                Text("إبدأ التعلم")
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .foregroundColor(.white)
+                    .background(Color.orange1)
+                    .frame(width: 200.0, height: 50.0)
+                    .cornerRadius(25)
+                    .padding()
+            })
+            
+        }
     }
+    
 }
-
-#Preview {
+    
+    #Preview {
+    
     ContentView()
 }
+
+
+
