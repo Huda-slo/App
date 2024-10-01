@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct profile: View {
+    @State private var volume: Double = 0
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-        Slider(value: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant(10)/*@END_MENU_TOKEN@*/)
+        Text("مستوى الصوت")
+        Slider(value: $volume, in: 0...100)
+            .accentColor(.orange1)
             
             
             
