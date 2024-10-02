@@ -20,7 +20,6 @@
 		9E9F1B8B2CAA792A00D88E74 /* AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F1B8A2CAA792A00D88E74 /* AppUITestsLaunchTests.swift */; };
 		9EB01DCE2CABD04400C7111B /* Profile page1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB01DCD2CABD04400C7111B /* Profile page1.swift */; };
 		F2B57B062CABD26200371F47 /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B57B052CABD26200371F47 /* profile.swift */; };
-		F2B57B082CABF19B00371F47 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B57B072CABF19B00371F47 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +56,6 @@
 		9E9F1B8A2CAA792A00D88E74 /* AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9EB01DCD2CABD04400C7111B /* Profile page1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile page1.swift"; sourceTree = "<group>"; };
 		F2B57B052CABD26200371F47 /* profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
-		F2B57B072CABF19B00371F47 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +110,6 @@
 				9E9F1B6F2CAA792900D88E74 /* ContentView.swift */,
 				9E8561EF2CAA96C000D26C8A /* Welcome page.swift */,
 				F2B57B052CABD26200371F47 /* profile.swift */,
-				F2B57B072CABF19B00371F47 /* Storyboard.storyboard */,
 				9EB01DCD2CABD04400C7111B /* Profile page1.swift */,
 				1193974E2CAA813700CF53A8 /* ViewTwo.swift */,
 				9E9F1B712CAA792A00D88E74 /* Assets.xcassets */,
@@ -254,7 +251,6 @@
 			files = (
 				9E9F1B752CAA792A00D88E74 /* Preview Assets.xcassets in Resources */,
 				9E9F1B722CAA792A00D88E74 /* Assets.xcassets in Resources */,
-				F2B57B082CABF19B00371F47 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
