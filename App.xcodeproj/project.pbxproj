@@ -43,7 +43,7 @@
 /* Begin PBXFileReference section */
 		1193974E2CAA813700CF53A8 /* ViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTwo.swift; sourceTree = "<group>"; };
 		119397562CABDD9200CF53A8 /* Profile page2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile page2.swift"; sourceTree = "<group>"; };
-		11C397CC2CAD4336003EB2A9 /* GreatJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatJob.swift; sourceTree = "<group>"; };
+		11C397CC2CAD4336003EB2A9 /* GreatJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GreatJob.swift; path = ../GreatJob.swift; sourceTree = "<group>"; };
 		86D9D0672CAA889C00F65AE1 /* Arafat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arafat.swift; sourceTree = "<group>"; };
 		9E8561EF2CAA96C000D26C8A /* Welcome page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Welcome page.swift"; sourceTree = "<group>"; };
 		9E9F1B6A2CAA792900D88E74 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,7 +88,6 @@
 		9E9F1B612CAA792900D88E74 = {
 			isa = PBXGroup;
 			children = (
-				11C397CC2CAD4336003EB2A9 /* GreatJob.swift */,
 				9E9F1B6C2CAA792900D88E74 /* App */,
 				9E9F1B7D2CAA792A00D88E74 /* AppTests */,
 				9E9F1B872CAA792A00D88E74 /* AppUITests */,
@@ -115,6 +114,7 @@
 				F2B57B052CABD26200371F47 /* profile.swift */,
 				9EB01DCD2CABD04400C7111B /* Profile page1.swift */,
 				1193974E2CAA813700CF53A8 /* ViewTwo.swift */,
+				11C397CC2CAD4336003EB2A9 /* GreatJob.swift */,
 				9E9F1B712CAA792A00D88E74 /* Assets.xcassets */,
 				86D9D0672CAA889C00F65AE1 /* Arafat.swift */,
 				119397562CABDD9200CF53A8 /* Profile page2.swift */,

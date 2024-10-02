@@ -16,8 +16,9 @@ struct GreatJob: View {
                         .background(Color.blue)
                         .cornerRadius(10)
                 }
-                .padding(.trailing, 20) // محاذاة الزر إلى اليمين
-                .padding(.top, 20) // محاذاة الزر إلى الأعلى
+                .padding(.trailing, 20)
+                .padding(.top, 20)
+
             }
             Spacer()
         }
