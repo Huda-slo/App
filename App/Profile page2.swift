@@ -45,7 +45,7 @@ struct ProfilePopup: View {
                     .resizable()
                     .clipShape(Circle())
                     .frame(width: 100, height: 100)
-                    .overlay(Circle().stroke(Color.background, lineWidth: 4))
+                    .overlay(Circle().stroke(Color.orange2, lineWidth: 4))
 
                 VStack(alignment: .trailing) {
                     Text("الإسم")
@@ -56,8 +56,8 @@ struct ProfilePopup: View {
 
                     TextField("اسم اللاعب", text: $playerName)
                         .padding()
-                        .background(RoundedRectangle(cornerRadius: 8).stroke(Color.background, lineWidth: 2))
-                        .padding(.trailing, 20)
+                        .background(RoundedRectangle(cornerRadius: 8).stroke(Color.orange2, lineWidth: 2))
+                        .padding(.horizontal, 20)
 
                     Text("الهدف")
                         .font(.title3)
@@ -68,8 +68,8 @@ struct ProfilePopup: View {
 
                     TextField("الهدف", text: $playerGoal)
                         .padding()
-                        .background(RoundedRectangle(cornerRadius: 8).stroke(Color.background, lineWidth: 2))
-                        .padding(.trailing, 20)
+                        .background(RoundedRectangle(cornerRadius: 8).stroke(Color.orange2, lineWidth: 2))
+                        .padding(.horizontal, 20)
 
                     HStack {
                         Button(action: {
@@ -81,7 +81,7 @@ struct ProfilePopup: View {
                                 .padding()
                                 .frame(maxWidth: .infinity)
 
-                                .background(Color.background)
+                                .background(Color.orange2)
                                 .cornerRadius(25)
                         }
 
