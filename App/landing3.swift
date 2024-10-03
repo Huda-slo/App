@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct landing3: View {
     var body: some View {
         VStack {
             Image( "image4")
@@ -36,7 +36,7 @@ struct ContentView: View {
     
     #Preview {
     
-    ContentView()
+        landing3()
 }
 
 

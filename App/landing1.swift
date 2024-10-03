@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ViewTwo: View {
+struct landing1: View {
     var body: some View {
         
         VStack {
@@ -43,5 +43,5 @@ struct ViewTwo: View {
         
     
                      #Preview {
-                         ViewTwo()
+                         landing1()
                      }
