@@ -18,6 +18,7 @@
 		9E9F1B7F2CAA792A00D88E74 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F1B7E2CAA792A00D88E74 /* AppTests.swift */; };
 		9E9F1B892CAA792A00D88E74 /* AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F1B882CAA792A00D88E74 /* AppUITests.swift */; };
 		9E9F1B8B2CAA792A00D88E74 /* AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F1B8A2CAA792A00D88E74 /* AppUITestsLaunchTests.swift */; };
+		9EA67A472CAD378900051EE6 /* q1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA67A462CAD378900051EE6 /* q1.swift */; };
 		9EB01DCE2CABD04400C7111B /* Profile page1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB01DCD2CABD04400C7111B /* Profile page1.swift */; };
 		F2B57B062CABD26200371F47 /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B57B052CABD26200371F47 /* profile.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		9E9F1B842CAA792A00D88E74 /* AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9F1B882CAA792A00D88E74 /* AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITests.swift; sourceTree = "<group>"; };
 		9E9F1B8A2CAA792A00D88E74 /* AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9EA67A462CAD378900051EE6 /* q1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = q1.swift; sourceTree = "<group>"; };
 		9EB01DCD2CABD04400C7111B /* Profile page1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile page1.swift"; sourceTree = "<group>"; };
 		F2B57B052CABD26200371F47 /* profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 				9E8561EF2CAA96C000D26C8A /* Welcome page.swift */,
 				F2B57B052CABD26200371F47 /* profile.swift */,
 				9EB01DCD2CABD04400C7111B /* Profile page1.swift */,
+				9EA67A462CAD378900051EE6 /* q1.swift */,
 				1193974E2CAA813700CF53A8 /* ViewTwo.swift */,
 				9E9F1B712CAA792A00D88E74 /* Assets.xcassets */,
 				86D9D0672CAA889C00F65AE1 /* Arafat.swift */,
@@ -279,6 +282,7 @@
 				9E8561F02CAA96C000D26C8A /* Welcome page.swift in Sources */,
 				9E9F1B6E2CAA792900D88E74 /* AppApp.swift in Sources */,
 				86D9D0682CAA889C00F65AE1 /* Arafat.swift in Sources */,
+				9EA67A472CAD378900051EE6 /* q1.swift in Sources */,
 				F2B57B062CABD26200371F47 /* profile.swift in Sources */,
 				1193974F2CAA813700CF53A8 /* ViewTwo.swift in Sources */,
 				119397572CABDD9200CF53A8 /* Profile page2.swift in Sources */,
