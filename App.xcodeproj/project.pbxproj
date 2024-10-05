@@ -12,6 +12,7 @@
 		11C397CD2CAD4336003EB2A9 /* GreatJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C397CC2CAD4336003EB2A9 /* GreatJob.swift */; };
 		86D9D0682CAA889C00F65AE1 /* landing2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D9D0672CAA889C00F65AE1 /* landing2.swift */; };
 		9E8561F02CAA96C000D26C8A /* Welcome page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8561EF2CAA96C000D26C8A /* Welcome page.swift */; };
+		9E91CC4C2CB144AF004D0A51 /* home1map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E91CC4B2CB144AF004D0A51 /* home1map.swift */; };
 		9E9F1B6E2CAA792900D88E74 /* AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F1B6D2CAA792900D88E74 /* AppApp.swift */; };
 		9E9F1B702CAA792900D88E74 /* landing3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F1B6F2CAA792900D88E74 /* landing3.swift */; };
 		9E9F1B722CAA792A00D88E74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E9F1B712CAA792A00D88E74 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		11C397CC2CAD4336003EB2A9 /* GreatJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GreatJob.swift; path = ../GreatJob.swift; sourceTree = "<group>"; };
 		86D9D0672CAA889C00F65AE1 /* landing2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landing2.swift; sourceTree = "<group>"; };
 		9E8561EF2CAA96C000D26C8A /* Welcome page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Welcome page.swift"; sourceTree = "<group>"; };
+		9E91CC4B2CB144AF004D0A51 /* home1map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home1map.swift; sourceTree = "<group>"; };
 		9E9F1B6A2CAA792900D88E74 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9F1B6D2CAA792900D88E74 /* AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppApp.swift; sourceTree = "<group>"; };
 		9E9F1B6F2CAA792900D88E74 /* landing3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landing3.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				1193974E2CAA813700CF53A8 /* landing1.swift */,
 				86D9D0672CAA889C00F65AE1 /* landing2.swift */,
 				9E9F1B6F2CAA792900D88E74 /* landing3.swift */,
+				9E91CC4B2CB144AF004D0A51 /* home1map.swift */,
 				9EA67A462CAD378900051EE6 /* q1.swift */,
 				F230B6322CAD3F5100C312F4 /* Questions.swift */,
 				11C397CC2CAD4336003EB2A9 /* GreatJob.swift */,
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F230B6332CAD3F5100C312F4 /* Questions.swift in Sources */,
+				9E91CC4C2CB144AF004D0A51 /* home1map.swift in Sources */,
 				9E9F1B702CAA792900D88E74 /* landing3.swift in Sources */,
 				9E8561F02CAA96C000D26C8A /* Welcome page.swift in Sources */,
 				9E9F1B6E2CAA792900D88E74 /* AppApp.swift in Sources */,
