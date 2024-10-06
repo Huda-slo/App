@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Profilepage1: View {
+    @State private var showingPopover = false
+    
     var body: some View {
         VStack {
     
@@ -146,11 +148,30 @@ struct Profilepage1: View {
                     
                 }
                 
+                
+                
                         }
             .padding(.top, 10)
             
             Spacer()
-            
+            VStack {
+                Button(action: {
+                    showingPopover = true
+                }) {
+                    Text("تعديل الملف الشخصي")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .foregroundColor(.blue)
+
+                        .padding()
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(10)
+                }
+                .sheet(isPresented: $showingPopover) {
+
+                    ProfilePopup()
+                }
+            }
             
         }
         

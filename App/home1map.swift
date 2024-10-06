@@ -65,23 +65,7 @@ struct Home1Map: View {
                     Spacer() // Pushes the HStack to the bottom
                     HStack {
                         
-                        Spacer()
-                        Image(systemName: "graduationcap.fill")
-                            .font(.system(size: 30))
-                            .foregroundColor(.white)
-                        Spacer()
-                        Image(systemName: "book.fill")
-                            .font(.system(size: 30))
-                            .foregroundColor(.white)
-                        Spacer()
-                        Image(systemName: "gamecontroller.fill")
-                            .font(.system(size: 30))
-                            .foregroundColor(.white)
-                        Spacer()
-                        Image(systemName: "house.fill")
-                            .font(.system(size: 30))
-                            .foregroundColor(.white)
-                        Spacer()
+                                               
                     }
                     .padding(.bottom, 20) // Spacing from the bottom of the screen
                     .background(Color.clear) // Keep the background clear to see the gradient

@@ -15,10 +15,7 @@ struct profile: View {
     @State var settingsPage = false
     var body: some View {
         VStack{
-            Image(systemName:"fireworks")
-                .font(.system(size: 100))
-                .symbolRenderingMode(.palette)
-                .foregroundStyle(.orange, .pink )
+           
                 
             Spacer()
             Button("الإعدادات"){settingsPage.toggle()}
