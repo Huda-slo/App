@@ -5,7 +5,6 @@
 //  Created by Huda Almadi on 02/04/1446 AH.
 //
 
-
 import SwiftUI
 
 struct Home1Map: View {
@@ -24,37 +23,37 @@ struct Home1Map: View {
                             .frame(height: 3700) // Ensures enough height for scrolling
 
                         // Displaying circles in a random layout with spacing
-                        LevelCircle(level: "١٦", levelNumber: 16)
-                            .offset(x: -100, y: 50)
-                        LevelCircle(level: "١٥", levelNumber: 15)
-                            .offset(x: 120, y: 160) // Adjusted horizontal and vertical spacing
-                        LevelCircle(level: "١٤", levelNumber: 14)
-                            .offset(x: -80, y: 280) // Increased vertical space
-                        LevelCircle(level: "١٣", levelNumber: 13)
-                            .offset(x: 140, y: 400)
-                        LevelCircle(level: "١٢", levelNumber: 12)
-                            .offset(x: -120, y: 520)
-                        LevelCircle(level: "١١", levelNumber: 11)
-                            .offset(x: 130, y: 640)
-                        LevelCircle(level: "١٠", levelNumber: 10)
-                            .offset(x: -90, y: 760)
-                        LevelCircle(level: "٩", levelNumber: 9)
-                            .offset(x: 140, y: 880)
-                        LevelCircle(level: "٨", levelNumber: 8)
-                            .offset(x: -100, y: 1000)
-                        LevelCircle(level: "٧", levelNumber: 7)
-                            .offset(x: 110, y: 1120)
-                        LevelCircle(level: "٦", levelNumber: 6)
-                            .offset(x: -70, y: 1240)
-                        LevelCircle(level: "٥", levelNumber: 5)
-                            .offset(x: 130, y: 1360)
-                        LevelCircle(level: "٤", levelNumber: 4)
-                            .offset(x: -120, y: 1480)
-                        LevelCircle(level: "٣", levelNumber: 3)
-                            .offset(x: 100, y: 1600)
-                        LevelCircle(level: "٢", levelNumber: 2)
-                            .offset(x: -80, y: 1720)
                         LevelCircle(level: "١", levelNumber: 1)
+                            .offset(x: -100, y: 50)
+                        LevelCircle(level: "٢", levelNumber: 2)
+                            .offset(x: 120, y: 160) // Adjusted horizontal and vertical spacing
+                        LevelCircle(level: "٣", levelNumber: 3)
+                            .offset(x: -80, y: 280) // Increased vertical space
+                        LevelCircle(level: "٤", levelNumber: 4)
+                            .offset(x: 140, y: 400)
+                        LevelCircle(level: "٥", levelNumber: 5)
+                            .offset(x: -120, y: 520)
+                        LevelCircle(level: "٦", levelNumber: 6)
+                            .offset(x: 130, y: 640)
+                        LevelCircle(level: "٧", levelNumber: 7)
+                            .offset(x: -90, y: 760)
+                        LevelCircle(level: "٨", levelNumber: 8)
+                            .offset(x: 140, y: 880)
+                        LevelCircle(level: "٩", levelNumber: 9)
+                            .offset(x: -100, y: 1000)
+                        LevelCircle(level: "١٠", levelNumber: 10)
+                            .offset(x: 110, y: 1120)
+                        LevelCircle(level: "١١", levelNumber: 11)
+                            .offset(x: -70, y: 1240)
+                        LevelCircle(level: "١٢", levelNumber: 12)
+                            .offset(x: 130, y: 1360)
+                        LevelCircle(level: "١٣", levelNumber: 13)
+                            .offset(x: -120, y: 1480)
+                        LevelCircle(level: "١٤", levelNumber: 14)
+                            .offset(x: 100, y: 1600)
+                        LevelCircle(level: "١٥", levelNumber: 15)
+                            .offset(x: -80, y: 1720)
+                        LevelCircle(level: "١٦", levelNumber: 16)
                             .offset(x: 130, y: 1840)
                     }
                     .frame(minHeight: 2000) // Ensure enough height for content
