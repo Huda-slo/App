@@ -48,7 +48,7 @@ struct ProfilePopup: View {
                     .overlay(Circle().stroke(Color.orange2, lineWidth: 4))
 
                 VStack(alignment: .trailing) {
-                    Text("الإسم")
+                    Text("الاسم")
                         .font(.title3)
                         .foregroundColor(.black)
                         .multilineTextAlignment(.trailing)

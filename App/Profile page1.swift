@@ -22,7 +22,7 @@ struct Profilepage1: View {
                         VStack(spacing: 20) {
                             Text("الملف الشخصي")
                                 .font(.largeTitle)
-                                .foregroundColor(.background1)
+                                .foregroundColor(.white)
                             
                             
                             

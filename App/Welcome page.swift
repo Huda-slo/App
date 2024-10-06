@@ -10,8 +10,10 @@ import SwiftUI
 struct Welcome_Page: View {
     @State private var moveLogo1 = false
     @State private var moveLogo2 = false
+    @State private var isActive = false
     
     var body: some View {
+        
         
         ZStack {
             LinearGradient(gradient: Gradient(colors: [Color("orange1"), Color("CustomOrangeBottom")]), startPoint: .top, endPoint: .bottom)

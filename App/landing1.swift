@@ -19,7 +19,7 @@ struct landing1: View {
             Spacer()
             
             VStack(alignment: .leading) {
-                Text("إختر شخصيتك في ")
+                Text("اختر شخصيتك في ")
                     .font(.title)
                     .foregroundColor(.orange1)
                 Text("أسمعك")

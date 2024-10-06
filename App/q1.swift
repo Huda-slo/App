@@ -14,9 +14,9 @@ struct q1: View {
     @State private var timer: Timer? = nil
     let totalTime: Double = 30 // Total time for the question (in seconds)
     
-    let sectionTitle = "المدرسه" // Section title
-    let questionText = "ما هو العنصر الصحيح؟"
-    let answers = ["كرسي", "طاولة", "كتاب", "قلم"]
+    let sectionTitle = "المدرسة" // Section title
+    let questionText = "ما هو الاختيار الصحيح؟"
+    let answers = ["كرسي", "طاولة", "جرس", "قلم"]
     
     var body: some View {
         VStack {
