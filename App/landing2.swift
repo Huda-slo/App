@@ -22,7 +22,7 @@ struct landing2: View {
             Button(action: {
                 
             }, label: {
-                Text("إبدأ التعلم")
+                Text("ابدأ التعلم")
                     .padding()
                     .frame(maxWidth: .infinity)
                     .foregroundColor(.white)
