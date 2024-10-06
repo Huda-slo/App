@@ -123,6 +123,7 @@ struct LearningView: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .padding()
+            
             // Add your learning content here
             Spacer()
         }
