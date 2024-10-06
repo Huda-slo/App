@@ -38,48 +38,45 @@ struct SuccessSheet: View {
                     showingSheet = false
                 }) {
                     Spacer()
+                        .padding(.top, 40)
                     Image(systemName: "xmark.circle.fill")
                         .resizable()
                         .frame(width: 20, height: 20)
                         .foregroundColor(.gray)
                         .padding(.top, 40)
                 }
-                .padding(.trailing, 20)
-                .padding(.top, 20)
+                Spacer()
             }
             
-            Spacer()
+            
+                .padding(.top, 40)
             
             Text("أحسنت")
                 .font(.title)
                 .fontWeight(.semibold)
                 .foregroundColor(.orange2)
-                .padding(.top, 40)
+              
+            Image(systemName:"fireworks")
+                .font(.system(size: 150))
+                .symbolRenderingMode(.palette)
+                .foregroundStyle(.orange, .pink )
 
-                .padding(.bottom, 20)
             
 
-            Image("ImageGood")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 150, height: 150)
-                .foregroundColor(.green)
-
-
+         
             Text("لقد أتممت المرحلة بنجاح")
                 .font(.title2)
                 .fontWeight(.semibold)
                 .foregroundColor(.orange2)
-                .padding(.top, 20)
-
+          
 
             Image("Image6")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 300, height: 300)
-                .padding(.top, 20)
+             
             
-            Spacer()
+           
 
 
             Button(action: {
@@ -95,7 +92,7 @@ struct SuccessSheet: View {
                     .cornerRadius(25)
             }
             .padding(.horizontal, 40)
-            .padding(.bottom, 40)
+            .padding(.bottom, 80)
         }
     }
 }
