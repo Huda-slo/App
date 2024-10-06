@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  HudaTest
-//
-//  Created by Huda Almadi on 28/03/1446 AH.
-//
-
 import SwiftUI
 
 struct Profilepage1: View {
@@ -159,13 +152,13 @@ struct Profilepage1: View {
                     showingPopover = true
                 }) {
                     Text("تعديل الملف الشخصي")
-                        .font(.title2)
+                        .font(.title3)
                         .fontWeight(.bold)
-                        .foregroundColor(.blue)
-
+                        .foregroundColor(.white)
                         .padding()
-                        .background(Color.gray.opacity(0.2))
-                        .cornerRadius(10)
+                        .frame(maxWidth: .infinity)
+                        .background(Color.orange2)
+                        .cornerRadius(25)
                 }
                 .sheet(isPresented: $showingPopover) {
 

@@ -9,13 +9,13 @@ struct Profile_page2: View {
                 showingPopover = true
             }) {
                 Text("تعديل الملف الشخصي")
-                    .font(.title2)
+                    .font(.title3)
                     .fontWeight(.bold)
-                    .foregroundColor(.blue)
-
+                    .foregroundColor(.white)
                     .padding()
-                    .background(Color.gray.opacity(0.2))
-                    .cornerRadius(10)
+                    .frame(maxWidth: .infinity)
+                    .background(Color.orange2)
+                    .cornerRadius(25)
             }
             .sheet(isPresented: $showingPopover) {
 
@@ -70,45 +70,43 @@ struct ProfilePopup: View {
                         .padding()
                         .background(RoundedRectangle(cornerRadius: 8).stroke(Color.orange2, lineWidth: 2))
                         .padding(.horizontal, 20)
-
+                   
                     HStack {
-                        Button(action: {
-                            print("تم حفظ البيانات: \(playerName), \(playerGoal)")
-                        }) {
-                            Text("حفظ")
-                                .font(.title3)
-                                .foregroundColor(.white)
-                                .padding()
-                                .frame(maxWidth: .infinity)
-
-                                .background(Color.orange2)
-                                .cornerRadius(25)
+                        Button("إلغاء") {
                         }
+                       
+                            .font(.title3)
+                            .foregroundColor(.white)
+                            .padding()
+                            .frame(maxWidth: .infinity)
 
-                        Button(action: {
-                            print("تم إلغاء التعديلات")
-                        }) {
-                            Text("إلغاء")
-                                .font(.title3)
-                                .foregroundColor(.white)
-                                .padding()
-                                .frame(maxWidth: .infinity)
+                            .background(Color.gray)
+                            .cornerRadius(25)
 
-                                .background(Color.gray)
-                                .cornerRadius(25)
+                        Spacer()
+
+                        Button("حفظ") {
+                            // حفظ التغييرات هنا
+                        }
+                        .font(.title3)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+
+                        .background(Color.orange2)
+                        .cornerRadius(25)
+                }
+                    }
+                    .padding()
+                }
+                .navigationBarHidden(true)
+
                         }
                     }
-                    .padding(.top, 20) 
 
-                    .padding(.horizontal, 40)
 
                 }
-                .padding(.top, 20)
-            }
-            .padding(.top, 20)
-        }
-    }
-}
+   
 
 #Preview {
     Profile_page2()

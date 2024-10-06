@@ -23,7 +23,7 @@ struct MainTabView: View {
             profile()
                 .tabItem {
                     Image(systemName: "gearshape.fill")  // أيقونة الصفحة الثالثة
-                    Text("الإعدادات")  
+                    Text("الإعدادات")
                     
                     //
                     //  profile.swift
