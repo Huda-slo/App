@@ -12,6 +12,9 @@
 		11C397CD2CAD4336003EB2A9 /* GreatJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C397CC2CAD4336003EB2A9 /* GreatJob.swift */; };
 		11C397D12CB28109003EB2A9 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C397D02CB28109003EB2A9 /* MainTabView.swift */; };
 		8664E5112CB3C065007BAA1D /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8664E5102CB3C065007BAA1D /* OnboardingScreen.swift */; };
+		8664E5132CB3D697007BAA1D /* GIFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8664E5122CB3D685007BAA1D /* GIFView.swift */; };
+		8664E5152CB3DBDC007BAA1D /* output_oRE8Bu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8664E5142CB3DBDC007BAA1D /* output_oRE8Bu.gif */; };
+		8664E5162CB3DBDC007BAA1D /* output_oRE8Bu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8664E5142CB3DBDC007BAA1D /* output_oRE8Bu.gif */; };
 		86D9D0682CAA889C00F65AE1 /* landing2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D9D0672CAA889C00F65AE1 /* landing2.swift */; };
 		9E8561F02CAA96C000D26C8A /* Welcome page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8561EF2CAA96C000D26C8A /* Welcome page.swift */; };
 		9E91CC4C2CB144AF004D0A51 /* home1map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E91CC4B2CB144AF004D0A51 /* home1map.swift */; };
@@ -51,6 +54,8 @@
 		11C397CC2CAD4336003EB2A9 /* GreatJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GreatJob.swift; path = ../GreatJob.swift; sourceTree = "<group>"; };
 		11C397D02CB28109003EB2A9 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		8664E5102CB3C065007BAA1D /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
+		8664E5122CB3D685007BAA1D /* GIFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFView.swift; sourceTree = "<group>"; };
+		8664E5142CB3DBDC007BAA1D /* output_oRE8Bu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = output_oRE8Bu.gif; sourceTree = "<group>"; };
 		86D9D0672CAA889C00F65AE1 /* landing2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landing2.swift; sourceTree = "<group>"; };
 		9E8561EF2CAA96C000D26C8A /* Welcome page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Welcome page.swift"; sourceTree = "<group>"; };
 		9E91CC4B2CB144AF004D0A51 /* home1map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home1map.swift; sourceTree = "<group>"; };
@@ -133,6 +138,7 @@
 				119397562CABDD9200CF53A8 /* Profile page2.swift */,
 				F2B57B052CABD26200371F47 /* Profile3.swift */,
 				8664E5102CB3C065007BAA1D /* OnboardingScreen.swift */,
+				8664E5122CB3D685007BAA1D /* GIFView.swift */,
 				9E9F1B732CAA792A00D88E74 /* Preview Content */,
 			);
 			path = App;
@@ -159,6 +165,7 @@
 			children = (
 				9E9F1B882CAA792A00D88E74 /* AppUITests.swift */,
 				9E9F1B8A2CAA792A00D88E74 /* AppUITestsLaunchTests.swift */,
+				8664E5142CB3DBDC007BAA1D /* output_oRE8Bu.gif */,
 			);
 			path = AppUITests;
 			sourceTree = "<group>";
@@ -269,6 +276,7 @@
 			files = (
 				9E9F1B752CAA792A00D88E74 /* Preview Assets.xcassets in Resources */,
 				9E9F1B722CAA792A00D88E74 /* Assets.xcassets in Resources */,
+				8664E5152CB3DBDC007BAA1D /* output_oRE8Bu.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8664E5162CB3DBDC007BAA1D /* output_oRE8Bu.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F230B6332CAD3F5100C312F4 /* Questions.swift in Sources */,
+				8664E5132CB3D697007BAA1D /* GIFView.swift in Sources */,
 				9E91CC4C2CB144AF004D0A51 /* home1map.swift in Sources */,
 				9E9F1B702CAA792900D88E74 /* landing3.swift in Sources */,
 				9E8561F02CAA96C000D26C8A /* Welcome page.swift in Sources */,
