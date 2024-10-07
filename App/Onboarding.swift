@@ -9,7 +9,7 @@
 
 import SwiftUI
 
-struct OnboardingScreen: View {
+struct Onboarding: View {
     
     @AppStorage("currentPage") var currentPage=1
     
@@ -26,7 +26,7 @@ struct OnboardingScreen: View {
 
 struct ContentView_Previews: PreviewProvider{
     static var previews: some View{
-        OnboardingScreen()
+        Onboarding()
     }
 }
  //home screen

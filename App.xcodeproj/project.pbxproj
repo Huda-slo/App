@@ -11,10 +11,7 @@
 		119397572CABDD9200CF53A8 /* Profile page2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119397562CABDD9200CF53A8 /* Profile page2.swift */; };
 		11C397CD2CAD4336003EB2A9 /* GreatJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C397CC2CAD4336003EB2A9 /* GreatJob.swift */; };
 		11C397D12CB28109003EB2A9 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C397D02CB28109003EB2A9 /* MainTabView.swift */; };
-		8664E5112CB3C065007BAA1D /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8664E5102CB3C065007BAA1D /* OnboardingScreen.swift */; };
-		8664E5132CB3D697007BAA1D /* GIFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8664E5122CB3D685007BAA1D /* GIFView.swift */; };
-		8664E5152CB3DBDC007BAA1D /* output_oRE8Bu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8664E5142CB3DBDC007BAA1D /* output_oRE8Bu.gif */; };
-		8664E5162CB3DBDC007BAA1D /* output_oRE8Bu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8664E5142CB3DBDC007BAA1D /* output_oRE8Bu.gif */; };
+		11C397D32CB3CC3C003EB2A9 /* References.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C397D22CB3CC3C003EB2A9 /* References.swift */; };
 		86D9D0682CAA889C00F65AE1 /* landing2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D9D0672CAA889C00F65AE1 /* landing2.swift */; };
 		9E8561F02CAA96C000D26C8A /* Welcome page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8561EF2CAA96C000D26C8A /* Welcome page.swift */; };
 		9E91CC4C2CB144AF004D0A51 /* home1map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E91CC4B2CB144AF004D0A51 /* home1map.swift */; };
@@ -28,6 +25,7 @@
 		9EA67A472CAD378900051EE6 /* q1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA67A462CAD378900051EE6 /* q1.swift */; };
 		9EB01DCE2CABD04400C7111B /* Profile page1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB01DCD2CABD04400C7111B /* Profile page1.swift */; };
 		F230B6332CAD3F5100C312F4 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230B6322CAD3F5100C312F4 /* Questions.swift */; };
+		F2608C382CB3E313004E2C0B /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2608C372CB3E313004E2C0B /* Onboarding.swift */; };
 		F2B57B062CABD26200371F47 /* Profile3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B57B052CABD26200371F47 /* Profile3.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,9 +51,7 @@
 		119397562CABDD9200CF53A8 /* Profile page2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile page2.swift"; sourceTree = "<group>"; };
 		11C397CC2CAD4336003EB2A9 /* GreatJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GreatJob.swift; path = ../GreatJob.swift; sourceTree = "<group>"; };
 		11C397D02CB28109003EB2A9 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		8664E5102CB3C065007BAA1D /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
-		8664E5122CB3D685007BAA1D /* GIFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFView.swift; sourceTree = "<group>"; };
-		8664E5142CB3DBDC007BAA1D /* output_oRE8Bu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = output_oRE8Bu.gif; sourceTree = "<group>"; };
+		11C397D22CB3CC3C003EB2A9 /* References.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = References.swift; sourceTree = "<group>"; };
 		86D9D0672CAA889C00F65AE1 /* landing2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landing2.swift; sourceTree = "<group>"; };
 		9E8561EF2CAA96C000D26C8A /* Welcome page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Welcome page.swift"; sourceTree = "<group>"; };
 		9E91CC4B2CB144AF004D0A51 /* home1map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home1map.swift; sourceTree = "<group>"; };
@@ -72,6 +68,7 @@
 		9EA67A462CAD378900051EE6 /* q1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = q1.swift; sourceTree = "<group>"; };
 		9EB01DCD2CABD04400C7111B /* Profile page1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile page1.swift"; sourceTree = "<group>"; };
 		F230B6322CAD3F5100C312F4 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		F2608C372CB3E313004E2C0B /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		F2B57B052CABD26200371F47 /* Profile3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				9E9F1B6D2CAA792900D88E74 /* AppApp.swift */,
+				F2608C372CB3E313004E2C0B /* Onboarding.swift */,
 				9E9F1B712CAA792A00D88E74 /* Assets.xcassets */,
 				9E8561EF2CAA96C000D26C8A /* Welcome page.swift */,
 				1193974E2CAA813700CF53A8 /* landing1.swift */,
@@ -132,6 +130,7 @@
 				9E91CC4B2CB144AF004D0A51 /* home1map.swift */,
 				9EA67A462CAD378900051EE6 /* q1.swift */,
 				F230B6322CAD3F5100C312F4 /* Questions.swift */,
+				11C397D22CB3CC3C003EB2A9 /* References.swift */,
 				11C397CC2CAD4336003EB2A9 /* GreatJob.swift */,
 				9EB01DCD2CABD04400C7111B /* Profile page1.swift */,
 				11C397D02CB28109003EB2A9 /* MainTabView.swift */,
@@ -310,13 +309,14 @@
 				9E9F1B6E2CAA792900D88E74 /* AppApp.swift in Sources */,
 				86D9D0682CAA889C00F65AE1 /* landing2.swift in Sources */,
 				9EA67A472CAD378900051EE6 /* q1.swift in Sources */,
+				11C397D32CB3CC3C003EB2A9 /* References.swift in Sources */,
 				11C397D12CB28109003EB2A9 /* MainTabView.swift in Sources */,
 				F2B57B062CABD26200371F47 /* Profile3.swift in Sources */,
 				11C397CD2CAD4336003EB2A9 /* GreatJob.swift in Sources */,
-				8664E5112CB3C065007BAA1D /* OnboardingScreen.swift in Sources */,
 				1193974F2CAA813700CF53A8 /* landing1.swift in Sources */,
 				119397572CABDD9200CF53A8 /* Profile page2.swift in Sources */,
 				9EB01DCE2CABD04400C7111B /* Profile page1.swift in Sources */,
+				F2608C382CB3E313004E2C0B /* Onboarding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

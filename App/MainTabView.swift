@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 struct MainTabView: View {
@@ -6,7 +5,11 @@ struct MainTabView: View {
     var body: some View {
         TabView {
             // الصفحة الأولى (خريطة المستويات)
-           
+            Home1Map()
+                .tabItem {
+                    Image(systemName: "map.fill")  // أيقونة الصفحة الأولى
+                    Text("الخريطة")                // النص أسفل الأيقونة
+                }
             
             // الصفحة الثانية (الملف الشخصي)
             Profilepage1()
@@ -14,14 +17,9 @@ struct MainTabView: View {
                     Image(systemName: "person.fill")  // أيقونة الصفحة الثانية
                     Text("الملف الشخصي")             // النص أسفل الأيقونة
                 }
-            Home1Map()
-                .tabItem {
-                    Image(systemName: "map.fill")  // أيقونة الصفحة الأولى
-                    Text("الخريطة")                // النص أسفل الأيقونة
-                }
             
-            // الصفحة الثالثة (الإعدادات)
-            profile()
+            // الصفحة الثالثة (المراجع)
+            ReferencesPage() // استبدال الصفحة بالإعدادات
                 .tabItem {
                     Image(systemName: "gearshape.fill")  // أيقونة الصفحة الثالثة
                     Text("الإعدادات")
