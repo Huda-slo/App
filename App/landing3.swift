@@ -86,10 +86,12 @@ struct landing3: View {
             }
             .background(Color.background1.edgesIgnoringSafeArea(.all))
             .navigationTitle("معلومات اللاعب")
-            .foregroundColor(Color.orange2)
+            .foregroundColor(Color.orange1)
+            
             
           
         }
+        .padding(.horizontal)
     }
 
     func loadImage() {
