@@ -4,7 +4,7 @@ import SwiftUI
 struct Home1Map: View {
     // Coordinates for each circle (x, y) to be centered
     let circlePositions: [(x: CGFloat, y: CGFloat)] = [
-        (-80, 50), (80, 160),
+        (-80, 60), (80, 160),
         (-80, 260), (80, 360),
         (-80, 460), (80, 560),
         (-80, 660), (80, 760),
