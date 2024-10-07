@@ -25,6 +25,7 @@
 		9EA67A472CAD378900051EE6 /* q1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA67A462CAD378900051EE6 /* q1.swift */; };
 		9EB01DCE2CABD04400C7111B /* Profile page1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB01DCD2CABD04400C7111B /* Profile page1.swift */; };
 		F230B6332CAD3F5100C312F4 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230B6322CAD3F5100C312F4 /* Questions.swift */; };
+		F2608C382CB3E313004E2C0B /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2608C372CB3E313004E2C0B /* Onboarding.swift */; };
 		F2B57B062CABD26200371F47 /* Profile3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B57B052CABD26200371F47 /* Profile3.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		9EA67A462CAD378900051EE6 /* q1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = q1.swift; sourceTree = "<group>"; };
 		9EB01DCD2CABD04400C7111B /* Profile page1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile page1.swift"; sourceTree = "<group>"; };
 		F230B6322CAD3F5100C312F4 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		F2608C372CB3E313004E2C0B /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		F2B57B052CABD26200371F47 /* Profile3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				9E9F1B6D2CAA792900D88E74 /* AppApp.swift */,
+				F2608C372CB3E313004E2C0B /* Onboarding.swift */,
 				9E9F1B712CAA792A00D88E74 /* Assets.xcassets */,
 				9E8561EF2CAA96C000D26C8A /* Welcome page.swift */,
 				1193974E2CAA813700CF53A8 /* landing1.swift */,
@@ -133,7 +136,6 @@
 				11C397D02CB28109003EB2A9 /* MainTabView.swift */,
 				119397562CABDD9200CF53A8 /* Profile page2.swift */,
 				F2B57B052CABD26200371F47 /* Profile3.swift */,
-				8664E5102CB3C065007BAA1D /* OnboardingScreen.swift */,
 				9E9F1B732CAA792A00D88E74 /* Preview Content */,
 			);
 			path = App;
@@ -305,10 +307,10 @@
 				11C397D12CB28109003EB2A9 /* MainTabView.swift in Sources */,
 				F2B57B062CABD26200371F47 /* Profile3.swift in Sources */,
 				11C397CD2CAD4336003EB2A9 /* GreatJob.swift in Sources */,
-				8664E5112CB3C065007BAA1D /* OnboardingScreen.swift in Sources */,
 				1193974F2CAA813700CF53A8 /* landing1.swift in Sources */,
 				119397572CABDD9200CF53A8 /* Profile page2.swift in Sources */,
 				9EB01DCE2CABD04400C7111B /* Profile page1.swift in Sources */,
+				F2608C382CB3E313004E2C0B /* Onboarding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
