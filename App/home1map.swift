@@ -134,23 +134,7 @@ struct LearningView: View {
     }
 }
 
-// Questions page
-struct Questions: View {
-    var body: some View {
-        VStack {
-            Text("Questions Page")
-                .font(.largeTitle)
-                .padding()
-            
-            // Add your questions content here
-            Spacer()
-        }
-        .navigationTitle("Questions") // Set the navigation title
-        .padding()
-    }
-}
 
-// Preview for the SwiftUI canvas
 struct Home1Map_Previews: PreviewProvider {
     static var previews: some View {
         Home1Map()
