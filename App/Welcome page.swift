@@ -15,7 +15,7 @@ struct Welcome_Page: View {
     var body: some View {
         if isActive {
             
-            OnboardingScreen()
+            Onboarding()
         } else {
             
             ZStack {
