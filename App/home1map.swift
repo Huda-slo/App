@@ -1,5 +1,6 @@
 import SwiftUI
 
+// Main View
 struct Home1Map: View {
     // Coordinates for each circle (x, y) to be centered
     let circlePositions: [(x: CGFloat, y: CGFloat)] = [
@@ -97,8 +98,7 @@ struct LevelCircle: View {
                         )
                         .frame(width: 100, height: 100)
                         .shadow(color: .yellow, radius: 5, x: 0, y: 0) // Adding a shadow
-                }
- else {
+                } else {
                     Circle()
                         .fill(Color.gray)
                         .frame(width: 100, height: 100)
@@ -129,13 +129,29 @@ struct LearningView: View {
             // Add your learning content here
             Spacer()
         }
-        .navigationBarTitle("Level \(levelNumber)", displayMode: .inline)
+        .navigationTitle("Level \(levelNumber)") // Set the navigation title
+        .padding()
+    }
+}
+
+// Questions page
+struct Questions: View {
+    var body: some View {
+        VStack {
+            Text("Questions Page")
+                .font(.largeTitle)
+                .padding()
+            
+            // Add your questions content here
+            Spacer()
+        }
+        .navigationTitle("Questions") // Set the navigation title
         .padding()
     }
 }
 
 // Preview for the SwiftUI canvas
-struct GameMapView_Previews: PreviewProvider {
+struct Home1Map_Previews: PreviewProvider {
     static var previews: some View {
         Home1Map()
     }

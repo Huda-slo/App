@@ -116,7 +116,7 @@ class QuizViewModel: ObservableObject {
     }
 }
 
-struct Questions: View {
+struct Questions1: View {
     @ObservedObject var viewModel: QuizViewModel
     
     var body: some View {
@@ -202,9 +202,11 @@ struct ResultPopup: View {
             .cornerRadius(10)
         }
         .padding()
+        .navigationTitle("Questions")
     }
+        
 }
 
 #Preview {
-    Questions(viewModel: QuizViewModel(totalQuestions: 9))
+    Questions1(viewModel: QuizViewModel(totalQuestions: 9))
 }
