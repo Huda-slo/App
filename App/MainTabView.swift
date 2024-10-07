@@ -2,6 +2,7 @@
 import SwiftUI
 
 struct MainTabView: View {
+
     var body: some View {
         TabView {
             // الصفحة الأولى (خريطة المستويات)
@@ -23,29 +24,20 @@ struct MainTabView: View {
             profile()
                 .tabItem {
                     Image(systemName: "gearshape.fill")  // أيقونة الصفحة الثالثة
-                    Text("الإعدادات")  
+                    Text("الإعدادات") 
                     
-                    //
-                    //  profile.swift
-                    //  App
-                    //
-                    //  Created by Bayan Alshuwaier on 01/10/2024.
-                    //
+                    
+                
 
 
-
-// النص أسفل الأيقونة
                 }
         }
         .accentColor(.orange) // لون الأيقونات عند اختيار التبويب
     }
 }
 
-#Preview {
-    MainTabView()
-}
-
 
 #Preview {
     MainTabView()
 }
+
