@@ -1,10 +1,3 @@
-//
-//  home1map.swift
-//  App
-//
-//  Created by Huda Almadi on 02/04/1446 AH.
-//
-
 import SwiftUI
 
 struct Home1Map: View {
@@ -84,7 +77,7 @@ struct LevelCircle: View {
         NavigationLink(destination: LearningView(levelNumber: levelNumber)) {
             ZStack {
                 Circle()
-                    .fill(Color.orange2)
+                    .fill(levelNumber == 1 ? Color.orange2 : Color.gray) // First circle orange, others gray
                     .frame(width: 100, height: 100)
                     .shadow(radius: 5)
                 Text(level)
