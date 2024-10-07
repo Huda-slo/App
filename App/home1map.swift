@@ -4,6 +4,7 @@ struct Home1Map: View {
     var body: some View {
         NavigationView {
             ZStack {
+                
                 ZStack {
                     LinearGradient(gradient: Gradient(colors: [Color("orange1"), Color("CustomOrangeBottom")]), startPoint: .top, endPoint: .bottom)
                         .edgesIgnoringSafeArea(.all)
@@ -13,44 +14,45 @@ struct Home1Map: View {
                     ZStack {
                         // Background padding for scrollability
                         Color.clear
-                            .frame(height: 3700) // Ensures enough height for scrolling
+                            .frame(height: 3400) // Ensures enough height for scrolling
 
                         // Displaying circles in a random layout with spacing
                         LevelCircle(level: "١", levelNumber: 1)
-                            .offset(x: -100, y: 50)
+                            .offset(x: -80, y: 50)
                         LevelCircle(level: "٢", levelNumber: 2)
-                            .offset(x: 120, y: 160) // Adjusted horizontal and vertical spacing
+                            .offset(x: 80, y: 160) // Adjusted horizontal and vertical spacing
                         LevelCircle(level: "٣", levelNumber: 3)
-                            .offset(x: -80, y: 280) // Increased vertical space
+                            .offset(x: -80, y: 260) // Increased vertical space
                         LevelCircle(level: "٤", levelNumber: 4)
-                            .offset(x: 140, y: 400)
+                            .offset(x: 80, y: 360)
                         LevelCircle(level: "٥", levelNumber: 5)
-                            .offset(x: -120, y: 520)
+                            .offset(x: -80, y: 460)
                         LevelCircle(level: "٦", levelNumber: 6)
-                            .offset(x: 130, y: 640)
+                            .offset(x: 80, y: 560)
                         LevelCircle(level: "٧", levelNumber: 7)
-                            .offset(x: -90, y: 760)
+                            .offset(x: -80, y: 660)
                         LevelCircle(level: "٨", levelNumber: 8)
-                            .offset(x: 140, y: 880)
+                            .offset(x: 80, y: 760)
                         LevelCircle(level: "٩", levelNumber: 9)
-                            .offset(x: -100, y: 1000)
+                            .offset(x: -80, y: 860)
                         LevelCircle(level: "١٠", levelNumber: 10)
-                            .offset(x: 110, y: 1120)
+                            .offset(x: 80, y: 960)
                         LevelCircle(level: "١١", levelNumber: 11)
-                            .offset(x: -70, y: 1240)
+                            .offset(x: -80, y: 1060)
                         LevelCircle(level: "١٢", levelNumber: 12)
-                            .offset(x: 130, y: 1360)
+                            .offset(x: 80, y: 1160)
                         LevelCircle(level: "١٣", levelNumber: 13)
-                            .offset(x: -120, y: 1480)
+                            .offset(x: -80, y: 1260)
                         LevelCircle(level: "١٤", levelNumber: 14)
-                            .offset(x: 100, y: 1600)
+                            .offset(x: 80, y: 1360)
                         LevelCircle(level: "١٥", levelNumber: 15)
-                            .offset(x: -80, y: 1720)
+                            .offset(x: -80, y: 1460)
                         LevelCircle(level: "١٦", levelNumber: 16)
-                            .offset(x: 130, y: 1840)
+                            .offset(x: 80, y: 1560)
                     }
-                    .frame(minHeight: 2000) // Ensure enough height for content
-                    .padding(.bottom, 150) // Space for navigation bar and scrollability
+                  
+                    .padding(.top, -1600)
+                    
                 }
 
                 // Fixed bottom navigation bar
@@ -60,11 +62,13 @@ struct Home1Map: View {
                         
                                                
                     }
-                    .padding(.bottom, 20) // Spacing from the bottom of the screen
+                   
                     .background(Color.clear) // Keep the background clear to see the gradient
                 }
             }
         }
+        
+        .navigationBarHidden(true)
     }
 }
 
@@ -77,7 +81,7 @@ struct LevelCircle: View {
         NavigationLink(destination: LearningView(levelNumber: levelNumber)) {
             ZStack {
                 Circle()
-                    .fill(levelNumber == 1 ? Color.orange2 : Color.gray) // First circle orange, others gray
+                    .fill(levelNumber == 1 ? Color.orange2 : Color.gray)
                     .frame(width: 100, height: 100)
                     .shadow(radius: 5)
                 Text(level)

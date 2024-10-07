@@ -28,15 +28,47 @@ class QuizViewModel: ObservableObject {
         self.totalQuestions = totalQuestions
         loadQuestions()
     }
+    let optionPool = ["طالب", "معلم", "كرسي", "طاولة", "رياضيات", "تاريخ", "جرس", "حقيبة", "كتاب", "قلم"]
+   
     
     func loadQuestions() {
         questions = [
-            Question(imageName: "Bell", correctAnswer: "جرس", options: ["جرس", "حقيبة", "كتاب", "قلم"]),
-            Question(imageName: "Notebook", correctAnswer: "كتاب", options: ["حقيبة", "كتاب", "قلم", "تاريخ"]),
-            Question(imageName: "Pen", correctAnswer: "Option 3", options: ["Option 1", "Option 2", "Option 3", "Option 4"]),
-            Question(imageName: "Pen", correctAnswer: "Option 3", options: ["Option 1", "Option 2", "Option 3", "Option 4"]),
+            Question(imageName: "Bell",
+                                 correctAnswer: "جرس",
+                                 options: generateOptions(correctAnswer: "جرس")),
+            Question(imageName: "Notebook",
+                                 correctAnswer: "دفتر",
+                                 options: generateOptions(correctAnswer: "دفتر")),
+            Question(imageName: "Pen",
+                                 correctAnswer: "قلم",
+                                 options: generateOptions(correctAnswer: "قلم")),
+            Question(imageName: "History",
+                                 correctAnswer: "تاريخ",
+                                 options: generateOptions(correctAnswer: "تاريخ")),
+            Question(imageName: "Multiply",
+                                 correctAnswer: "ضرب",
+                                 options: generateOptions(correctAnswer: "ضرب")),
+            Question(imageName: "Name",
+                                 correctAnswer: "اسم",
+                                 options: generateOptions(correctAnswer: "اسم")),
+            Question(imageName: "plus",
+                                 correctAnswer: "جمع",
+                                 options: generateOptions(correctAnswer: "جمع")),
+            Question(imageName: "Backpack",
+                                 correctAnswer: "حقيبة",
+                                 options: generateOptions(correctAnswer: "حقيبة")),
+            Question(imageName: "Sharpner",
+                                 correctAnswer: "براية",
+                                 options: generateOptions(correctAnswer: "براية")),
+            
         ]
         questions = Array(questions.prefix(totalQuestions))
+    }
+    func generateOptions(correctAnswer: String) -> [String] {
+        let filteredPool = optionPool.filter { $0 != correctAnswer}
+        let randomOptions = filteredPool.shuffled().prefix(3)
+        return ([correctAnswer] + randomOptions).shuffled()
+    
     }
     
     func answerQuestion(answer: String) {
@@ -162,7 +194,7 @@ struct ResultPopup: View {
                 .padding(.bottom, 20)
             
             Button("Close") {
-                viewModel.showScorePopup = false // Close the pop-up
+                viewModel.showScorePopup = false 
             }
             .padding()
             .background(Color.blue)
@@ -174,5 +206,5 @@ struct ResultPopup: View {
 }
 
 #Preview {
-    Questions(viewModel: QuizViewModel(totalQuestions: 5))
+    Questions(viewModel: QuizViewModel(totalQuestions: 9))
 }

@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct MainTabView: View {
+
     var body: some View {
         TabView {
             // الصفحة الأولى (خريطة المستويات)
@@ -20,14 +21,20 @@ struct MainTabView: View {
             // الصفحة الثالثة (المراجع)
             ReferencesPage() // استبدال الصفحة بالإعدادات
                 .tabItem {
-                    Image(systemName: "book.fill")  // أيقونة المراجع
-                    Text("المراجع")                // النص أسفل الأيقونة
+                    Image(systemName: "gearshape.fill")  // أيقونة الصفحة الثالثة
+                    Text("الإعدادات")
+                    
+                
+
+
                 }
         }
         .accentColor(.orange) // لون الأيقونات عند اختيار التبويب
     }
 }
 
+
 #Preview {
     MainTabView()
 }
+

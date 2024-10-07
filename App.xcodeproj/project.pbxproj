@@ -133,6 +133,7 @@
 				11C397D02CB28109003EB2A9 /* MainTabView.swift */,
 				119397562CABDD9200CF53A8 /* Profile page2.swift */,
 				F2B57B052CABD26200371F47 /* Profile3.swift */,
+				8664E5102CB3C065007BAA1D /* OnboardingScreen.swift */,
 				9E9F1B732CAA792A00D88E74 /* Preview Content */,
 			);
 			path = App;
@@ -304,9 +305,11 @@
 				11C397D12CB28109003EB2A9 /* MainTabView.swift in Sources */,
 				F2B57B062CABD26200371F47 /* Profile3.swift in Sources */,
 				11C397CD2CAD4336003EB2A9 /* GreatJob.swift in Sources */,
+				8664E5112CB3C065007BAA1D /* OnboardingScreen.swift in Sources */,
 				1193974F2CAA813700CF53A8 /* landing1.swift in Sources */,
 				119397572CABDD9200CF53A8 /* Profile page2.swift in Sources */,
 				9EB01DCE2CABD04400C7111B /* Profile page1.swift in Sources */,
+				1023889A2CABDB4900DB2FC6 /* maha.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

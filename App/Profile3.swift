@@ -6,27 +6,33 @@
 //
 
 import SwiftUI
-struct FontSizeKey: EnvironmentKey { static let defaultValue: CGFloat = 14}
+
+struct FontSizeKey: EnvironmentKey { static let defaultValue: CGFloat = 16}
 
 
 struct profile: View {
-    @State private var volume: Double = 0
-    @State private var fontSize: Int = 14
-    @State var settingsPage = false
+    @State private var volume: Double = 80
+    @State private var fontSize: Int = 16
+    @State var settingsPage = true
     var body: some View {
         VStack{
-           
-                
             Spacer()
-            Button("الإعدادات"){settingsPage.toggle()}
+            Text("حجم الخط")
+                .font(.system(size: CGFloat(fontSize)))
+            Picker(selection: $fontSize, label: /*@START_MENU_TOKEN@*/Text("Picker")/*@END_MENU_TOKEN@*/) {
+                Text("صغير").tag(12)
+                Text("وسط").tag(14)
+                Text("كبير").tag(15)
+                Text("كبير جدًا").tag(16)
+                    .pickerStyle(SegmentedPickerStyle())
+            }
             
-            
-            
-                .sheet(isPresented: $settingsPage,
-                       content: {
-                    settingsPageView()
-                        .presentationDetents([.medium, .large])
-                })
+            Spacer()
+            Text("مستوى الصوت")
+            Slider(value: $volume, in: 0...100)
+                .frame(width: 250, height: 30)
+                .accentColor(.orange1)
+            Spacer()
             
             
         }
@@ -41,10 +47,10 @@ struct profile: View {
                 Text("حجم الخط")
                     .font(.system(size: CGFloat(fontSize)))
                 Picker(selection: $fontSize, label: /*@START_MENU_TOKEN@*/Text("Picker")/*@END_MENU_TOKEN@*/) {
-                    Text("صغير").tag(12)
-                    Text("وسط").tag(14)
-                    Text("كبير").tag(15)
-                    Text("كبير جدًا").tag(16)
+                    Text("صغير").tag(15)
+                    Text("وسط").tag(16)
+                    Text("كبير").tag(17)
+                    Text("كبير جدًا").tag(18)
                         .pickerStyle(SegmentedPickerStyle())
                 }
                 
