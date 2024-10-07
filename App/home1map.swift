@@ -11,6 +11,7 @@ struct Home1Map: View {
     var body: some View {
         NavigationView {
             ZStack {
+                
                 ZStack {
                     LinearGradient(gradient: Gradient(colors: [Color("orange1"), Color("CustomOrangeBottom")]), startPoint: .top, endPoint: .bottom)
                         .edgesIgnoringSafeArea(.all)
@@ -57,6 +58,7 @@ struct Home1Map: View {
                             .offset(x: 130, y: 1840)
                     }
                     .frame(minHeight: 2000) // Ensure enough height for content
+                    .padding(.top, 0)
                     .padding(.bottom, 150) // Space for navigation bar and scrollability
                 }
 
@@ -72,6 +74,8 @@ struct Home1Map: View {
                 }
             }
         }
+        
+        .navigationBarHidden(true)
     }
 }
 
@@ -84,7 +88,7 @@ struct LevelCircle: View {
         NavigationLink(destination: LearningView(levelNumber: levelNumber)) {
             ZStack {
                 Circle()
-                    .fill(Color.orange2)
+                    .fill(levelNumber == 1 ? Color.orange2 : Color.gray)
                     .frame(width: 100, height: 100)
                     .shadow(radius: 5)
                 Text(level)
