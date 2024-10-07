@@ -1,74 +1,75 @@
 import SwiftUI
 
 struct Home1Map: View {
+    // Coordinates for each circle (x, y) to be centered
+    let circlePositions: [(x: CGFloat, y: CGFloat)] = [
+        (-80, 50), (80, 160),
+        (-80, 260), (80, 360),
+        (-80, 460), (80, 560),
+        (-80, 660), (80, 760),
+        (-80, 860), (80, 960),
+        (-80, 1060), (80, 1160),
+        (-80, 1260), (80, 1360),
+        (-80, 1460), (80, 1560)
+    ]
+    
     var body: some View {
         NavigationView {
             ZStack {
+                LinearGradient(gradient: Gradient(colors: [Color("orange1"), Color("CustomOrangeBottom")]), startPoint: .top, endPoint: .bottom)
+                    .edgesIgnoringSafeArea(.all)
                 
-                ZStack {
-                    LinearGradient(gradient: Gradient(colors: [Color("orange1"), Color("CustomOrangeBottom")]), startPoint: .top, endPoint: .bottom)
-                        .edgesIgnoringSafeArea(.all)
-                }
-                // Scrollable content
                 ScrollView {
-                    ZStack {
-                        // Background padding for scrollability
-                        Color.clear
-                            .frame(height: 3400) // Ensures enough height for scrolling
+                    VStack(spacing: 0) {
+                        ZStack {
+                            // Dashed lines connecting the circles
+                            DashedLineShape(positions: circlePositions)
+                                .stroke(style: StrokeStyle(lineWidth: 2, dash: [5]))
+                                .foregroundColor(.black)
+                                .frame(height: 200) // Ensure enough height for the entire layout
+                            
+                            // Draw each circle at its respective position
+                            ForEach(0..<circlePositions.count, id: \.self) { index in
+                                let position = circlePositions[index]
+                                LevelCircle(level: "\(index + 1)", levelNumber: index + 1)
+                                    .offset(x: position.x, y: position.y)
+                            }
+                        }
+                        .frame(height: 100) // Set the height of the ZStack to give space for scrolling
 
-                        // Displaying circles in a random layout with spacing
-                        LevelCircle(level: "١", levelNumber: 1)
-                            .offset(x: -80, y: 50)
-                        LevelCircle(level: "٢", levelNumber: 2)
-                            .offset(x: 80, y: 160) // Adjusted horizontal and vertical spacing
-                        LevelCircle(level: "٣", levelNumber: 3)
-                            .offset(x: -80, y: 260) // Increased vertical space
-                        LevelCircle(level: "٤", levelNumber: 4)
-                            .offset(x: 80, y: 360)
-                        LevelCircle(level: "٥", levelNumber: 5)
-                            .offset(x: -80, y: 460)
-                        LevelCircle(level: "٦", levelNumber: 6)
-                            .offset(x: 80, y: 560)
-                        LevelCircle(level: "٧", levelNumber: 7)
-                            .offset(x: -80, y: 660)
-                        LevelCircle(level: "٨", levelNumber: 8)
-                            .offset(x: 80, y: 760)
-                        LevelCircle(level: "٩", levelNumber: 9)
-                            .offset(x: -80, y: 860)
-                        LevelCircle(level: "١٠", levelNumber: 10)
-                            .offset(x: 80, y: 960)
-                        LevelCircle(level: "١١", levelNumber: 11)
-                            .offset(x: -80, y: 1060)
-                        LevelCircle(level: "١٢", levelNumber: 12)
-                            .offset(x: 80, y: 1160)
-                        LevelCircle(level: "١٣", levelNumber: 13)
-                            .offset(x: -80, y: 1260)
-                        LevelCircle(level: "١٤", levelNumber: 14)
-                            .offset(x: 80, y: 1360)
-                        LevelCircle(level: "١٥", levelNumber: 15)
-                            .offset(x: -80, y: 1460)
-                        LevelCircle(level: "١٦", levelNumber: 16)
-                            .offset(x: 80, y: 1560)
+                        // Adding a spacer to fill space below the circles
+                        Spacer(minLength: 1500) // Adjust this length as needed for additional space
                     }
-                  
-                    .padding(.top, -1600)
-                    
-                }
-
-                // Fixed bottom navigation bar
-                VStack {
-                    Spacer() // Pushes the HStack to the bottom
-                    HStack {
-                        
-                                               
-                    }
-                   
-                    .background(Color.clear) // Keep the background clear to see the gradient
+                    .padding(.bottom, 20) // Optional: add some padding at the bottom
                 }
             }
+            .navigationBarHidden(true)
+        }
+    }
+}
+
+// Custom Shape to draw dashed lines connecting the circles
+struct DashedLineShape: Shape {
+    var positions: [(x: CGFloat, y: CGFloat)] // Array of circle positions
+    let xOffset: CGFloat = 30 // Adjust this to move the dashed line to the right
+    
+    func path(in rect: CGRect) -> Path {
+        var path = Path()
+
+        // Draw lines connecting each pair of circles
+        for i in 1..<positions.count {
+            let previousPosition = positions[i - 1]
+            let currentPosition = positions[i]
+
+            // Adjust the x-offset to move the dashed line to the right
+            let startPoint = CGPoint(x: previousPosition.x + 140 + xOffset, y: previousPosition.y + 100)
+            let endPoint = CGPoint(x: currentPosition.x + 140 + xOffset, y: currentPosition.y + 100)
+
+            path.move(to: startPoint)
+            path.addLine(to: endPoint)
         }
         
-        .navigationBarHidden(true)
+        return path
     }
 }
 
@@ -80,10 +81,30 @@ struct LevelCircle: View {
     var body: some View {
         NavigationLink(destination: LearningView(levelNumber: levelNumber)) {
             ZStack {
-                Circle()
-                    .fill(levelNumber == 1 ? Color.orange2 : Color.gray)
-                    .frame(width: 100, height: 100)
-                    .shadow(radius: 5)
+                if levelNumber == 1 {
+                    // Unique look for Circle 1 using a striped pattern
+                    Circle()
+                        .fill(
+                            LinearGradient(
+                                gradient: Gradient(colors: [Color.red, Color.orange]),
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                        .overlay(
+                            Circle()
+                                .stroke(Color.white.opacity(0.5), lineWidth: 5) // Outline
+                        )
+                        .frame(width: 100, height: 100)
+                        .shadow(color: .yellow, radius: 5, x: 0, y: 0) // Adding a shadow
+                }
+ else {
+                    Circle()
+                        .fill(Color.gray)
+                        .frame(width: 100, height: 100)
+                        .shadow(radius: 5)
+                }
+
                 Text(level)
                     .font(.largeTitle)
                     .fontWeight(.bold)
@@ -119,3 +140,5 @@ struct GameMapView_Previews: PreviewProvider {
         Home1Map()
     }
 }
+
+
