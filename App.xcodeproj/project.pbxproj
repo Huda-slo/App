@@ -309,7 +309,6 @@
 				1193974F2CAA813700CF53A8 /* landing1.swift in Sources */,
 				119397572CABDD9200CF53A8 /* Profile page2.swift in Sources */,
 				9EB01DCE2CABD04400C7111B /* Profile page1.swift in Sources */,
-				1023889A2CABDB4900DB2FC6 /* maha.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
