@@ -1,13 +1,16 @@
 //
-//  ContentView.swift
+//  Arafat.swift
 //  App
 //
-//  Created by Huda Almadi on 27/03/1446 AH.
+//  Created by Arafat on 27/03/1446 AH.
 //
+
+
+//تعريف
 
 import SwiftUI
 
-struct ContentView: View {
+struct landing2: View {
     var body: some View {
         VStack {
             Image( "image4")
@@ -19,7 +22,7 @@ struct ContentView: View {
             Button(action: {
                 
             }, label: {
-                Text("إبدأ التعلم")
+                Text("ابدأ التعلم")
                     .padding()
                     .frame(maxWidth: .infinity)
                     .foregroundColor(.white)
@@ -36,8 +39,5 @@ struct ContentView: View {
     
     #Preview {
     
-    ContentView()
+        landing2()
 }
-
-
-

@@ -5,10 +5,11 @@
 //  Created by Reem on 26/03/1446 AH.
 //
 
+// تعريف
 
 import SwiftUI
 
-struct ViewTwo: View {
+struct landing1: View {
     var body: some View {
         
         VStack {
@@ -18,7 +19,7 @@ struct ViewTwo: View {
             Spacer()
             
             VStack(alignment: .leading) {
-                Text("إختر شخصيتك في ")
+                Text("اختر شخصيتك في ")
                     .font(.title)
                     .foregroundColor(.orange1)
                 Text("أسمعك")
@@ -43,5 +44,5 @@ struct ViewTwo: View {
         
     
                      #Preview {
-                         ViewTwo()
+                         landing1()
                      }
