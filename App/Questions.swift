@@ -32,9 +32,9 @@ class QuizViewModel: ObservableObject {
     func loadQuestions() {
         questions = [
             Question(imageName: "Bell", correctAnswer: "جرس", options: ["جرس", "حقيبة", "كتاب", "قلم"]),
-            Question(imageName: "Notebook", correctAnswer: "كتاب", options: ["حقيبة", "كتاب", "قلم", "تاريخ"]),
-            Question(imageName: "Pen", correctAnswer: "Option 3", options: ["Option 1", "Option 2", "Option 3", "Option 4"]),
-            Question(imageName: "Pen", correctAnswer: "Option 3", options: ["Option 1", "Option 2", "Option 3", "Option 4"]),
+            Question(imageName: "Notebook", correctAnswer: "دفتر", options: ["حقيبة", "دفتر", "قلم", "تاريخ"]),
+            Question(imageName: "Pen", correctAnswer: "قلم", options: ["كتاب", "قلم", "سبورة", "حقيبة"]),
+            
         ]
         questions = Array(questions.prefix(totalQuestions))
     }
@@ -162,7 +162,7 @@ struct ResultPopup: View {
                 .padding(.bottom, 20)
             
             Button("Close") {
-                viewModel.showScorePopup = false // Close the pop-up
+                viewModel.showScorePopup = false 
             }
             .padding()
             .background(Color.blue)
@@ -174,5 +174,5 @@ struct ResultPopup: View {
 }
 
 #Preview {
-    Questions(viewModel: QuizViewModel(totalQuestions: 5))
+    Questions(viewModel: QuizViewModel(totalQuestions: 3))
 }
