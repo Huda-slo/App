@@ -13,8 +13,9 @@ struct OnboardingScreen: View {
     
     var body: some View {
         
-      if currentPage>totalPages{
-          Home()}
+        if currentPage>totalPages{
+            // Home()}
+            landing3()}
        else {
             OnboardingScreen1()
        }
