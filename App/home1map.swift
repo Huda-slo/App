@@ -80,7 +80,7 @@ struct LevelCircle: View {
     var levelNumber: Int // To identify which level was tapped
 
     var body: some View {
-        NavigationLink(destination: LearningView(levelNumber: levelNumber)) {
+        NavigationLink(destination: Questions1(levelNumber: levelNumber)) {
             ZStack {
                 if levelNumber == 1 {
                     // Unique look for Circle 1 using a striped pattern
