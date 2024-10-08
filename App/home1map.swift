@@ -118,27 +118,79 @@ struct LevelCircle: View {
 // Learning page for the selected level
 struct LearningView: View {
     var levelNumber: Int
-
+    
+    
     var body: some View {
         VStack {
-            Text("Learning Page for Level \(levelNumber)")
+            Text("المرحله الاولى (المدرسه )")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-                .padding()
+                .foregroundColor(.orange1)
+            
+            
+            
+            Text("أهم الكلمات الاساسية التي تحتاجها في المدرسة")
+                .font(.subheadline)
+                .foregroundColor(.gray)
+                .multilineTextAlignment(.center)
+                .padding(.bottom, 10)
+            
+            VStack(alignment: .leading, spacing: 8) {
+                Text("تتضمن هذه المرحلة من:")
+                    .foregroundColor(.orange1)
+                Text("- أسئله")
+                    .multilineTextAlignment(.center)
+                Text("- صور")
+                    .multilineTextAlignment(.center)
+                Text("- مؤقت")
+                    .multilineTextAlignment(.center)
+                
+                Spacer()
+            }
+            .font(.body)
+            .foregroundColor(.orange1)
+            .padding(.horizontal)
+            .multilineTextAlignment(.center)
             
             // Add your learning content here
             Spacer()
+            
+            NavigationLink(destination: q1()) {
+                            Text("إبدأ")
+                                .font(.title2)
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(Color.orange1)
+                                .foregroundColor(.white)
+                                .cornerRadius(12)
+                                .padding(.horizontal, 40)
+                                .shadow(radius: 5)
+            }
+            
         }
-        .navigationTitle("Level \(levelNumber)") // Set the navigation title
-        .padding()
+    }
+    struct Questions: View {
+        var body: some View {
+            VStack {
+                Text("Question 0")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .padding()
+                
+                // Add your question or content here
+                Spacer()
+            }
+        }
+    }
+    
+    // Preview
+    struct Home1Map_Previews: PreviewProvider {
+        static var previews: some View {
+            Home1Map()
+        }
     }
 }
-
-
-struct Home1Map_Previews: PreviewProvider {
-    static var previews: some View {
-        Home1Map()
-    }
+#Preview {
+    Home1Map()
 }
-
 

@@ -68,7 +68,7 @@ struct landing3: View {
                 Spacer()
 
                 // Save Button (NavigationLink to Home1Map)
-                NavigationLink(destination: Home1Map()) { // Replace with your actual Home1Map view
+                NavigationLink(destination: MainTabView()) { // Replace with your actual Home1Map view
                     Text("حفظ")
                         .font(.title3)
                         .frame(maxWidth: .infinity)
@@ -91,7 +91,6 @@ struct landing3: View {
             
           
         }
-        .padding(.horizontal)
     }
 
     func loadImage() {
