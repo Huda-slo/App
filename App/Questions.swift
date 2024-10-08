@@ -202,9 +202,8 @@ struct ResultPopup: View {
             .cornerRadius(10)
         }
         .padding()
-        .navigationTitle("Questions")
-    }
-        
+        .navigationTitle("Questions0")    }
+      
 }
 
 #Preview {
