@@ -36,9 +36,9 @@ struct Questions1: View {
         VStack {
             if showResults {
                 VStack {
-                    Text("Quiz Complete!")
+                    Text("لقد أنهيت الاختبار!")
                         .font(.largeTitle)
-                    Text("Your Score: \(scorePercentage)%")
+                    Text("درجتك: \(scorePercentage)%")
                         .font(.title)
                 }
             } else {
@@ -110,7 +110,7 @@ struct Questions1: View {
                 return .red
             }
         }
-        return .orange
+        return .orange2
     }
 
     var scorePercentage: Int {
@@ -124,6 +124,7 @@ struct Questions1: View {
     }
 }
 
+// Result Popup with congratulatory message and image
 struct ResultPopup: View {
     let score: Int
     let totalQuestions: Int
@@ -131,18 +132,29 @@ struct ResultPopup: View {
 
     var body: some View {
         VStack(spacing: 20) {
-            Text("Results")
+            Text("تهانينا!")
                 .font(.largeTitle)
                 .bold()
+                .foregroundColor(.orange2)
 
-            Text("You got \(score) out of \(totalQuestions) correct!")
+            // Show a congratulatory image (replace with your desired image)
+            Image(systemName: "star.circle.fill")
+                .resizable()
+                .frame(width: 120, height: 120)
+                .foregroundColor(.yellow)
+                .padding()
+
+            Text("لقد حصلت على \(score) من أصل \(totalQuestions) إجابات صحيحة!")
                 .font(.title2)
+                .multilineTextAlignment(.center)
+                .foregroundColor(.black)
 
-            Text("Your Score: \(Int((Double(score) / Double(totalQuestions)) * 100))%")
+            Text("نسبة النجاح: \(Int((Double(score) / Double(totalQuestions)) * 100))%")
                 .font(.title)
                 .padding(.bottom, 20)
+                .foregroundColor(.orange2)
 
-            Button("Close") {
+            Button("إغلاق") {
                 closeAction()
             }
             .padding()

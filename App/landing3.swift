@@ -1,21 +1,17 @@
-//
-//  ContentView.swift
-//  App
-//
-//  Created by Huda Almadi on 27/03/1446 AH.
-// huda
 import SwiftUI
 
 // Main Player Profile View
-struct landing3: View {
+struct Landing3: View {
     @State private var playerName: String = ""
     @State private var goal: String = ""
     @State private var selectedImage: Image? = nil
     @State private var isImagePickerPresented: Bool = false
     @State private var inputImage: UIImage?
+    
+    @State private var isNavigatedToMainTabView = false // To track the navigation state
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 // Profile Picture
                 if let image = selectedImage {
@@ -67,8 +63,10 @@ struct landing3: View {
 
                 Spacer()
 
-                // Save Button (NavigationLink to Home1Map)
-                NavigationLink(destination: MainTabView()) { // Replace with your actual Home1Map view
+                // Save Button (Navigation to MainTabView without back button)
+                Button(action: {
+                    isNavigatedToMainTabView = true
+                }) {
                     Text("حفظ")
                         .font(.title3)
                         .frame(maxWidth: .infinity)
@@ -86,10 +84,11 @@ struct landing3: View {
             }
             .background(Color.background1.edgesIgnoringSafeArea(.all))
             .navigationTitle("معلومات اللاعب")
+            .navigationBarBackButtonHidden(true) // Hide back button in this view
             .foregroundColor(Color.orange1)
-            
-            
-          
+            .navigationDestination(isPresented: $isNavigatedToMainTabView) {
+                MainTabView().navigationBarBackButtonHidden(true)
+            }
         }
     }
 
@@ -138,6 +137,6 @@ struct ImagePicker: UIViewControllerRepresentable {
 
 struct PlayerProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        landing3()
+        Landing3()
     }
 }

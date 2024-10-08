@@ -19,7 +19,7 @@ struct Onboarding: View {
         
         if currentPage>totalPages{
             // Home()}
-            landing3()}
+            Landing3()}
        else {
             OnboardingScreen1()
        }
