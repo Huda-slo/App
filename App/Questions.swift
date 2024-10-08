@@ -131,6 +131,10 @@ struct ResultPopup: View {
     let closeAction: () -> Void
 
     var body: some View {
+        VStack {
+            LinearGradient(gradient: Gradient(colors: [Color("orange1"), Color("CustomOrangeBottom")]), startPoint: .top, endPoint: .bottom)
+            .edgesIgnoringSafeArea(.all)}
+        
         VStack(spacing: 20) {
             Text("تهانينا!")
                 .font(.largeTitle)
@@ -138,18 +142,20 @@ struct ResultPopup: View {
                 .foregroundColor(.orange2)
 
             // Show a congratulatory image (replace with your desired image)
-            Image(systemName: "star.circle.fill")
+           
+     
+            
+            Image( "GImage")
                 .resizable()
                 .frame(width: 120, height: 120)
                 .foregroundColor(.yellow)
-                .padding()
 
-            Text("لقد حصلت على \(score) من أصل \(totalQuestions) إجابات صحيحة!")
+            Text("لقد حصلت على \(score)من \(totalQuestions)  !")
                 .font(.title2)
                 .multilineTextAlignment(.center)
-                .foregroundColor(.black)
+                .foregroundColor(.gray)
 
-            Text("نسبة النجاح: \(Int((Double(score) / Double(totalQuestions)) * 100))%")
+            Text("النتيجة: \(Int((Double(score) / Double(totalQuestions)) * 100))%")
                 .font(.title)
                 .padding(.bottom, 20)
                 .foregroundColor(.orange2)
@@ -158,7 +164,7 @@ struct ResultPopup: View {
                 closeAction()
             }
             .padding()
-            .background(Color.blue)
+            .background(Color.orange2)
             .foregroundColor(.white)
             .cornerRadius(10)
         }

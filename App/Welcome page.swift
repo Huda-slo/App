@@ -2,7 +2,6 @@ import SwiftUI
 
 struct Welcome_Page: View {
     @State private var moveLogo1 = false
-    @State private var moveLogo2 = false
     @State private var isActive = false
 
     var body: some View {
@@ -23,7 +22,6 @@ struct Welcome_Page: View {
                         .onAppear {
                             moveLogo1.toggle()
                         }
-                    
                 }
 
                 Text("اسمعك")
@@ -44,8 +42,8 @@ struct Welcome_Page: View {
             }
         }
         .onAppear {
-            // بعد 3 ثواني، انتقل إلى صفحة Onboarding
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            // بعد 5 ثواني، انتقل إلى صفحة Onboarding
+            DispatchQueue.main.asyncAfter(deadline: .now() + 10) { // تغيير المهلة الزمنية إلى 5 ثواني
                 self.isActive = true
             }
         }
