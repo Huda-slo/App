@@ -58,14 +58,28 @@ struct OnboardingScreen1: View{
     
     var body: some View {
         ZStack{
+            
             if currentPage==1{
-                ScreenView(image: "Hello", title:"تطبيق أسمعك",details:"")
+                ScreenView(gif:"wave", title:"تطبيق أسمعك",details:"",image: "waveImage")
+    
+              
+            //if currentPage==1{
+              //  ScreenView(image: "Hello", //title:"تطبيق أسمعك",details:"")
             }
             if currentPage==2{
-                ScreenView(image: "stand", title:"تعلم لغة الإشارة",details:"")
+               ScreenView(gif:"wave", title:"تعلم لغة الإشارة",details:"",image: "waveImage")
+    
+            
+            
+           // if currentPage==2{
+            //    ScreenView(image: "stand", title:"تعلم لغة الإشارة",details:"")
             }
             if currentPage==3{
-                ScreenView(image: "ImageProfile", title:"أفهمك وتفهمني",details:"")
+               ScreenView(gif:"wave", title:"أفهمك وتفهمني ",details:"",image: "waveImage")
+    
+               
+          //  if currentPage==3{
+           //     ScreenView(image: "ImageProfile", title:"أفهمك وتفهمني",details:"")
             }
         }
     }
@@ -75,11 +89,31 @@ struct ScreenView: View {
     @AppStorage("currentPage") var currentPage=1
     
     
-    var image: String
+    var gif: String
     var title: String
     var details: String
+    var image: String
     
     var body: some View {
+        
+        
+        // Display the image or GIF based on the input
+                    if gif == "wave" {
+                        // Use your GIF code here for "wave"
+                        Gif(name: "wave")
+                            .frame(width: 200, height: 150)
+                            .edgesIgnoringSafeArea(.all)
+                            .offset(x: 0, y: 2)
+                            .scaleEffect(CGSize(width: 0.8, height: 0.7))
+                    } else {
+                        // Fallback to a regular image
+                        Image(image)
+                            .resizable()
+                            .frame(width: 100, height: 100)
+                    }
+        
+        
+        
         VStack{
             HStack{
                 
