@@ -110,10 +110,11 @@ struct Questions1: View {
                 return .red
             }
         }
-        return .orange2
-=======
+
         return .orange1
->>>>>>> Stashed changes
+
+     
+
     }
 
     var scorePercentage: Int {
