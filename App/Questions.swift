@@ -145,10 +145,11 @@ struct ResultPopup: View {
            
      
             
-            Image( "GImage")
-                .resizable()
-                .frame(width: 120, height: 120)
-                .foregroundColor(.yellow)
+            Gif(name: "wafe2")
+                .frame(width: 200, height: 200)
+                .edgesIgnoringSafeArea(.all)
+                .offset(x: 0,y: 0)
+                .scaleEffect(CGSize(width: 0.6, height: 0.6))
 
             Text("لقد حصلت على \(score)من \(totalQuestions)  !")
                 .font(.title2)
