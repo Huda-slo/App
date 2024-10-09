@@ -111,6 +111,9 @@ struct Questions1: View {
             }
         }
         return .orange2
+=======
+        return .orange1
+>>>>>>> Stashed changes
     }
 
     var scorePercentage: Int {
