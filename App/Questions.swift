@@ -110,7 +110,11 @@ struct Questions1: View {
                 return .red
             }
         }
-        return .orange2
+
+        return .orange1
+
+     
+
     }
 
     var scorePercentage: Int {
